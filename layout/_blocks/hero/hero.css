@@ -1,0 +1,86 @@
+.hero {
+    text-align: center;
+    background: url("../images/background/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-size: cover;
+    padding-top: 290px;
+    padding-bottom: 220px;
+    box-sizing: border-box;
+    margin-top: -98px;
+    position: relative;
+
+    @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+        background: url("../images/background/hero@2x.jpg");
+        background-repeat: no-repeat;
+        background-position: center -100px;
+        background-size: 100% auto;
+    }
+
+    &__title {
+        font-size: 51px;
+        font-weight: 700;
+        color: var(--white);
+        text-transform: uppercase;
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-bottom: 15px;
+
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 107px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        &:before {
+            left: -110px;
+        }
+
+        &:after {
+            right: -110px;
+        }
+    }
+
+    &__title--mark {
+        color: var(--main-color);
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        line-height: calc(26 / 24);
+        color: var(--white);
+        margin-bottom: 48px;
+    }
+
+    &__actions {
+        display: inline-block;
+        position: relative;
+    }
+
+    &__mouse {
+        position: absolute;
+        top: 10px;
+        right: -130px;
+    }
+
+    &__button-slider {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        overflow-y: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 28px;
+        margin: auto;
+    }
+}

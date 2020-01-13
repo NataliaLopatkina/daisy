@@ -1,0 +1,8 @@
+@import "../nav/nav.css";
+
+.header {
+    padding-top: 31px;
+    padding-bottom: 31px;
+    position: relative;
+    z-index: 1000;
+}

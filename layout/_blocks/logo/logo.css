@@ -1,0 +1,58 @@
+.logo {
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__figure {
+        width: 59px;
+        height: 36px;
+        background: rgba(252, 99, 94, 0.97);
+        position: relative;
+        margin-right: 16px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 15px solid rgba(252, 99, 94, 0.97);
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 15px solid rgba(252, 99, 94, 0.97);
+        }
+    }
+
+    &__figure-text {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: calc(80 / 36);
+        color: #0c252d;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: calc(16 / 24);
+        color: var(--white);
+    }
+}

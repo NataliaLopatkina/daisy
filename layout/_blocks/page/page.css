@@ -1,0 +1,23 @@
+@import "../normalize/normalize.css";
+@import "../reset/reset.css";
+@import "../vars-color/vars-color.css";
+@import "../../fonts/fonts.css";
+@import "../box/box.css";
+@import "../button/button.css";
+@import "../button-slider/button-slider.css";
+@import "../title/title.css";
+@import "../text/text.css";
+@import "../visually-hidden/visually-hidden.css";
+
+.page {
+    font-family: "PF Encore Sans Pro", "Arial", sans-serif;
+    font-weight: 300;
+
+    &__container {
+        overflow-x: hidden;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

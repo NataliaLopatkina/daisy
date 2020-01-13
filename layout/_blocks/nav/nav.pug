@@ -1,0 +1,30 @@
+mixin nav()
+    nav(class="nav")
+        include ../../_blocks/logo/logo.pug
+        +logo()
+
+        ul(class="nav__list")
+            -
+                var links = [
+                    {
+                        text: "About",
+                    },
+
+                    {
+                        text: "Portfolio",
+                    },
+
+                    {
+                        text: "Services",
+                    },
+
+                    {
+                        text: "Contact",
+                    }
+                ]
+
+            each item in links
+                li(class="nav__item")
+                    a(class="nav__link" href="#5") !{item.text}
+
+    // END .nav

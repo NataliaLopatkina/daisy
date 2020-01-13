@@ -1,0 +1,28 @@
+mixin button(obj)
+    
+    - var href = ""
+
+    - tag = obj.tag ? obj.tag : "button"
+    - href = obj.href ? obj.href : false
+    - target = obj.target ? obj.target : false
+    - type= obj.type ? obj.type: false
+
+    - var classMods = ""
+    if obj.mod
+        each el in obj.mod
+            - classMods = classMods + " button--" + el
+
+    #{tag}(class="button" + classMods href=obj.href target=obj.target type=obj.type)&attributes(attributes)
+        !="\n"
+        if obj.text
+            span(class="button__text") !{obj.text}
+            !="\n"
+        if obj.image
+            span(class="button__image")
+                !="\n"
+                img(class="button__icon" src="images/icons/" + obj.image + ".svg" alt=obj.image)
+                !="\n"
+            !="\n"
+    !="\n"
+
+    // END .button

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "PF Encore Sans Pro";
+    src: url("../fonts/PFEncoreSansPro/PFEncoreSansPro-Medium.woff2") format("woff2"),
+        url("../fonts/PFEncoreSansPro/PFEncoreSansPro-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PF Encore Sans Pro";
+    src: url("../fonts/PFEncoreSansPro/PFEncoreSansPro-Light.woff2") format("woff2"),
+        url("../fonts/PFEncoreSansPro/PFEncoreSansPro-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PF Encore Sans Pro";
+    src: url("../fonts/PFEncoreSansPro/PFEncoreSansPro-Bold.woff2") format("woff2"),
+        url("../fonts/PFEncoreSansPro/PFEncoreSansPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PF Encore Sans Pro";
+    src: url("../fonts/PFEncoreSansPro/PFEncoreSansPro-Regular.woff2") format("woff2"),
+        url("../fonts/PFEncoreSansPro/PFEncoreSansPro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

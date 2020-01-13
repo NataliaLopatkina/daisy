@@ -1,0 +1,28 @@
+.button-slider {
+    width: 28px;
+    height: 28px;
+    padding-top: 5px;
+    border-radius: 50%;
+    border: none;
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    display: block;
+    transition-property: background, fill;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+
+    &__image {
+        width: 12px;
+        height: 15px;
+        transform: rotate(90deg);
+        fill: var(--white);
+    }
+
+    &:hover {
+        background: transparent;
+
+        & .button-slider__image {
+            fill: var(--main-color);
+        }
+    }
+}

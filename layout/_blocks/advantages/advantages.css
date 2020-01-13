@@ -1,0 +1,12 @@
+.advantages {
+    text-align: center;
+    padding-top: 67px;
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+    &__text {
+        max-width: 515px;
+    }
+}

@@ -1,0 +1,39 @@
+@import "../logo/logo.css";
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: calc(36 / 16);
+        letter-spacing: 0.64px;
+        color: var(--white);
+        text-transform: uppercase;
+        border-bottom: 3px solid transparent;
+        transition-property: color, border;
+        transition-duration: 0.25s;
+        transition-timing-function: ease;
+
+        &:hover {
+            color: #fc635e;
+            border-bottom: 3px solid var(--main-color);
+        }
+    }
+}

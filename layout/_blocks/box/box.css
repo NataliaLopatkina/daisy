@@ -1,0 +1,64 @@
+@import "../vars-media/vars-media.css";
+
+.box {
+    width: 970px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    @if $mobileFirst {
+        width: 100%;
+        min-width: 320px;
+        max-width: 480px;
+
+        @media (--S) {
+            width: 540px;
+            max-width: none;
+        }
+
+        @media (--M) {
+            width: 720px;
+        }
+
+        @media (--L) {
+            width: 960px;
+        }
+
+        @media (--XL) {
+            width: 1140px;
+        }
+
+        /* @media (--XXL) {
+            width: 1400px;
+        } */
+    }
+
+    @else {
+        width: 970px;
+
+        /* @media (--XXL) {
+            width: 1400px;
+        } */
+
+        @media (--L) {
+            width: 992px;
+        }
+
+        @media (--M) {
+            width: 768px;
+        }
+
+        @media (--S) {
+            width: 540px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @media (--XS) {
+            width: 100%;
+            min-width: 320px;
+            max-width: 480px;
+        }
+    }
+}
