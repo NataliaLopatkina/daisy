@@ -12,7 +12,23 @@ html(lang="en")
 
         main(class="main")
             include ../../_blocks/hero/hero.pug
-            +hero()
+            +hero({
+                mainHero: true,
+                titleMark: "Clients",
+                title: "in your business",
+                textButton: "I want clients"
+            })
 
             include ../../_blocks/advantages/advantages.pug
             +advantages()
+
+            include ../../_blocks/hero/hero.pug
+            +hero({
+                mainHero: false,
+                titleMark: "Expand",
+                title: "your business",
+                textButton: "Join Us"
+            })
+
+            include ../../_blocks/steps/steps.pug
+            +steps()

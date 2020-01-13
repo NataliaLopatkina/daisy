@@ -1,0 +1,47 @@
+mixin steps()
+    section(class="steps")
+        div(class="box steps__box")
+            h3(class="title steps__title") <span class="title--mark">Our</span> steps
+            p(class="text steps__text") Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+    
+            ul(class="steps__list")
+                -
+                    var steps = [
+                        {
+                            modClass: "first",
+                            number: "1",
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida",
+                        },
+
+                        {
+                            modClass: "second",
+                            number: "2",
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida",
+                        },
+
+                        {
+                            modClass: "third",
+                            number: "3",
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida",
+                        },
+
+                        {
+                            modClass: "fourth",
+                            number: "4",
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.",
+                        },
+
+                    ]
+
+                each item in steps
+                    li(class="step steps__item step--" + item.modClass)
+                        div(class="step__box")
+                            p(class="step__title") Step 
+                                span(class="step__title--mark") !{item.number}
+                            p(class="text text--size-s step__text") !{item.text}
+
+
+        include ../../_blocks/button-slider/button-slider.pug
+        +button-slider()(class="button-slider--stroke steps__button-slider")
+
+    // END .steps

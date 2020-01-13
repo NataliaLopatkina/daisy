@@ -1,0 +1,43 @@
+@import "../step/step.css";
+
+.steps {
+    text-align: center;
+    padding-top: 51px;
+    padding-left: 86px;
+
+    &__box {
+        position: relative;
+        padding-bottom: 265px;
+
+        &:after {
+            content: url("../images/background/process.png");
+            position: absolute;
+            left: 57px;
+            bottom: 88px;
+            z-index: -1;
+        }
+    }
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        max-width: 507px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 57px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__button-slider {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 21px;
+    }
+}

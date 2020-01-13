@@ -1,23 +1,30 @@
-mixin hero()
-    div(class="hero")
+mixin hero(obj)
+
+    - var modClass = ""
+    if (obj.mainHero == false)
+        - modClass = "hero--expand"
+
+    div(class="hero " + modClass)
         div(class="box")
             h1(class="hero__title") 
-                <span class="hero__title--mark">Clients</span> in your business
-            p(class="hero__subtitle") Your clients on the internet. Learn how to receive them.
+                <span class="hero__title--mark">!{obj.titleMark}</span> !{obj.title}
+            if (obj.mainHero)
+                p(class="hero__subtitle") Your clients on the internet. Learn how to receive them.
 
             div(class="hero__actions")
                 include ../../_blocks/button/button.pug
                 +button({
                     tag: "a",
                     href: "#5",
-                    text: "I want clients",
+                    text: obj.textButton,
                     mod: ["transparent", "size-l"],
                 })(class="hero__button")
 
-                div(class="hero__mouse")
-                    img(class="hero__image",
-                    src="images/svg-icons/mouse.svg",
-                    alt="Mouse")
+                if (obj.mainHero)
+                    div(class="hero__mouse")
+                        img(class="hero__image",
+                        src="images/svg-icons/mouse.svg",
+                        alt="Mouse")
 
             include ../../_blocks/button-slider/button-slider.pug
             +button-slider()(class="hero__button-slider")

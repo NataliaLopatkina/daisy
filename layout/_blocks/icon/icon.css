@@ -1,0 +1,14 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    &--fill {
+        fill: currentColor;
+        stroke: none;
+    }
+
+    &--stroke {
+        stroke: currentColor;
+        fill: none;
+    }
+}

@@ -11,18 +11,38 @@
     transition-duration: 0.25s;
     transition-timing-function: ease;
 
-    &__image {
-        width: 12px;
-        height: 15px;
-        transform: rotate(90deg);
-        fill: var(--white);
-    }
-
     &:hover {
         background: transparent;
 
         & .button-slider__image {
             fill: var(--main-color);
         }
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &--stroke {
+        background: var(--white);
+
+        &:hover {
+            background: var(--main-color);
+
+            & .button-slider__image {
+                fill: var(--white);
+            }
+        }
+
+        & .button-slider__image {
+            fill: var(--main-color);
+        }
+    }
+
+    &__image {
+        width: 12px;
+        height: 15px;
+        transform: rotate(90deg);
+        fill: var(--white);
     }
 }

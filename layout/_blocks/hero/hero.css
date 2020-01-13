@@ -66,6 +66,10 @@
         position: relative;
     }
 
+    &__button {
+        min-width: 205px;
+    }
+
     &__mouse {
         position: absolute;
         top: 10px;
@@ -82,5 +86,29 @@
         right: 0;
         bottom: 28px;
         margin: auto;
+    }
+
+    &--expand {
+        background: url("../images/background/expand.jpg") center top no-repeat;
+        background-size: cover;
+        padding-top: 224px;
+        margin-top: 0;
+        padding-bottom: 190px;
+
+        @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+            background: url("../images/background/expand@2x.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 100% auto;
+        }
+
+        & .hero__title {
+            margin-bottom: 51px;
+
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
     }
 }

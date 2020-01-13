@@ -1,8 +1,52 @@
 mixin advantages()
+
     section(class="advantages")
         div(class="box")
             h2(class="title advantages__title") What can 
                 span(class="title--mark") you receive?
             p(class="text advantages__text") Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+
+            ul(class="advantages__list")
+                -
+                    var advantages = [
+                        {
+                            image: "advantage-1",
+                            modClass: "advantage__image--clients",
+                            title: "Clients",
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean",
+                        },
+
+                        {
+                            modClass: "advantage__image--branding",
+                            image: "advantage-2",
+                            title: "Branding",
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean",
+                        },
+
+                        {
+                            modClass: "advantage__image--marketing",
+                            image: "advantage-3",
+                            title: "Marketing",
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean",
+                        },
+
+                        {
+                            modClass: "advantage__image--adv",
+                            image: "advantage-4",
+                            title: "Adv.",
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean",
+                        },
+                    ]
+
+                each item in advantages
+                    li(class="advantage advantages__item")
+                        div(class="advantage__image-block")
+                            svg(class="icon icon--fill advantage__image " + item.modClass)
+                                use(xlink:href="images/svg-sprite/svg-sprite.svg#" + item.image)
+                        p(class="advantage__title") !{item.title}
+                        p(class="text text--size-s advantage__text") !{item.text}
+
+            include ../../_blocks/button-slider/button-slider.pug
+            +button-slider()(class="button-slider--stroke advantages__button-slider")
 
     // END .advantages

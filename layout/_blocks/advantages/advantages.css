@@ -1,6 +1,9 @@
+@import "../advantage/advantage.css";
+
 .advantages {
     text-align: center;
     padding-top: 67px;
+    padding-bottom: 15px;
 
     &__title {
         margin-bottom: 17px;
@@ -8,5 +11,23 @@
 
     &__text {
         max-width: 515px;
+        margin: 0 auto;
+        margin-bottom: 81px;   
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        margin: -22px;
+        margin-bottom: 51px;
+    }
+
+    &__item {
+        margin: 22px;
+    }
+
+    &__button-slider {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
