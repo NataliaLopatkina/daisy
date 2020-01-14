@@ -1,0 +1,25 @@
+@import "../portfolio-toggles/portfolio-toggles.css";
+@import "../portfolio-list/portfolio-list.css";
+
+.portfolio {
+    padding-top: 78px;
+    padding-bottom: 14px;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        margin-bottom: 54px;
+    }
+
+    &__button {
+        margin-bottom: 26px;
+    }
+
+    &__button-slider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

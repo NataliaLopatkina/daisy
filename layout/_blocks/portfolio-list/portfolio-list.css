@@ -1,0 +1,26 @@
+.portfolio-list {
+    &__content {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: -6px;
+    }
+
+    &__item {
+        width: calc(100% / 4 - 12px);
+        height: 200px;
+        margin: 6px;
+
+        &:first-child {
+            width: calc(100% / 2 - 12px);
+        }
+
+        &:last-child {
+            width: calc(100% / 2 - 12px);
+        }
+    }
+
+    &__image {
+        height: 100%;
+    }
+}

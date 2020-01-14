@@ -1,0 +1,31 @@
+mixin portfolio-toggles()
+    div(class="portfolio-toggles")
+        ul(class="portfolio-toggles__list")
+            -
+                var toggles = [
+                    {
+                        text: "All",
+                    },
+
+                    {
+                        text: "Entertainment",
+                    },
+
+                    {
+                        text: "Sport",
+                    },
+
+                    {
+                        text: "Business",
+                    },
+
+                    {
+                        text: "Building",
+                    }
+                ]
+
+            each item in toggles
+                li(class="portfolio-toggles__item")
+                    button(class="portfolio-toggles__button" type="button") !{item.text}
+
+    // END .portfolio-toggles

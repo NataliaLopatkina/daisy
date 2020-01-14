@@ -1,0 +1,20 @@
+mixin portfolio()
+    section(class="portfolio")
+        div(class="box")
+            h3(class="title portfolio__title") Portfolio
+            
+            include ../../_blocks/portfolio-toggles/portfolio-toggles.pug
+            +portfolio-toggles()
+
+            include ../../_blocks/portfolio-list/portfolio-list.pug
+            +portfolio-list()(class="portfolio__list")
+
+            include ../../_blocks/button/button.pug
+            +button({
+                text: "I want landing page",
+            })(class="button--size-s portfolio__button")
+
+            include ../../_blocks/button-slider/button-slider.pug
+            +button-slider()(class="button-slider--stroke portfolio__button-slider")
+
+    // END .portfolio

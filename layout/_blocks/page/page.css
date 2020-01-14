@@ -8,6 +8,7 @@
 @import "../title/title.css";
 @import "../text/text.css";
 @import "../icon/icon.css";
+@import "../image-box/image-box.css";
 @import "../visually-hidden/visually-hidden.css";
 
 .page {
