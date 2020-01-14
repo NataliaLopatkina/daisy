@@ -1,8 +1,7 @@
 @import "../nav/nav.css";
 
 .header {
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-top: 38px;
     position: relative;
     z-index: 1000;
 }

@@ -1,0 +1,36 @@
+mixin areas()
+    section(class="areas")
+        div(class="areas__title-box")
+            h3(class="title areas__title") What do 
+                span(class="title--mark") we do?
+        div(class="areas__list")
+            include ../../_blocks/area/area.pug
+            -
+                var areas = [
+                    {
+                        modClass: "landing",
+                        title: "Landing Pages",
+                        text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam",
+                        image: "devices",
+                    },
+
+                    {
+                        modClass: "adverting",
+                        reverse: true,
+                        title: "Advertising",
+                        text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam",
+                        image: "mackbook",
+                    },
+
+                    {
+                        modClass: "marketing",
+                        title: "Marketing kit",
+                        text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam",
+                        image: "marketing",
+                    },
+                ]
+
+            each obj in areas
+                +area(obj)
+
+    // END .areas

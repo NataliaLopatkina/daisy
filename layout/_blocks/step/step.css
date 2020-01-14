@@ -7,7 +7,7 @@
         & .step__box {
             width: 174px;
             min-height: 201px;
-            padding-top: 45px;
+            padding-top: 42px;
             box-sizing: border-box;
             background: url("../images/background/step-1.png") center no-repeat;
             position: relative;
@@ -16,7 +16,7 @@
                 content: url("../images/svg-icons/step-1-icon.svg");
                 position: absolute;
                 left: -18px;
-                top: 27px;
+                top: 34px;
             }
         }
     }
@@ -29,8 +29,8 @@
         & .step__box {
             width: 269px;
             min-height: 201px;
-            padding-top: 45px;
-            padding-left: 115px;
+            padding-top: 48px;
+            padding-left: 92px;
             box-sizing: border-box;
             background: url("../images/background/step-2.png") center no-repeat;
             position: relative;
@@ -38,15 +38,15 @@
             &:before {
                 content: url("../images/svg-icons/step-2-icon.svg");
                 position: absolute;
-                left: 80px;
-                top: 27px;
+                left: 77px;
+                top: 31px;
             }
         }
     }
 
     &--third {
         width: 100%;
-        padding-right: 63px;
+        padding-left: 17px;
         order: 0;
 
         & .step__box {
@@ -62,8 +62,8 @@
             &:before {
                 content: url("../images/svg-icons/step-3-icon.svg");
                 position: absolute;
-                left: -15px;
-                top: 27px;
+                left: -17px;
+                top: 34px;
             }
         }
     }
@@ -71,7 +71,7 @@
     &--fourth {
         width: 70%;
         order: 3;
-        padding-right: 152px;
+        padding-right: 76px;
         margin-top: -126px;
         box-sizing: border-box;
 
@@ -79,7 +79,7 @@
             width: 262px;
             margin-left: auto;
             min-height: 302px;
-            padding-top: 63px;
+            padding-top: 60px;
             box-sizing: border-box;
             background: url("../images/background/step-4.png") center no-repeat;
             position: relative;
@@ -88,8 +88,12 @@
                 content: url("../images/svg-icons/step-4-icon.svg");
                 position: absolute;
                 left: -17px;
-                top: 55px;
+                top: 53px;
             }
+        }
+
+        & .step__title {
+            padding-right: 7px;
         }
 
         & .step__text {
@@ -105,7 +109,7 @@
         text-transform: uppercase;
         display: inline-block;
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 13px;
 
         &:after {
             content: "";
@@ -123,7 +127,7 @@
     }
 
     &__text {
-        max-width: 151px;
+        max-width: 133px;
         margin-left: auto;
         margin-right: auto;
         text-align: left;

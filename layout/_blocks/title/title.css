@@ -2,6 +2,7 @@
     font-size: 28px;
     font-weight: 500;
     line-height: calc(26 / 28);
+    letter-spacing: -0.14px;
     color: var(--title-color);
     text-transform: uppercase;
     display: inline-block;
@@ -15,7 +16,7 @@
         background: var(--text-color);
         display: block;
         left: 0;
-        bottom: -8px;
+        bottom: -11px;
     }
 
     &--mark {

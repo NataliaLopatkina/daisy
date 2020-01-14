@@ -1,0 +1,26 @@
+mixin area(obj)
+    - var reverse = ""
+    if (obj.reverse)
+        - reverse = " area--reverse "
+
+    div(class="area area--" + obj.modClass + reverse)
+        div(class="box area__box")
+            div(class="area__text-box")
+                p(class="area__title") !{obj.title}
+                p(class="text text--size-s text--letter-spacing area__text") !{obj.text}
+                
+                include ../../_blocks/button/button.pug
+                +button({
+                    text: "More details",
+                })(class="button--size-m")
+
+            div(class="image-box area__image-box")
+                img(class="image-box__image area__image",
+                    src="images/areas/" + obj.image + ".png",
+                    srcset="images/areas/" + obj.image + "@2x" + ".png" + " 2x",
+                    alt=obj.image)
+
+        include ../../_blocks/button-slider/button-slider.pug
+        +button-slider()(class="button-slider--stroke area__button-slider")
+
+    // END .area

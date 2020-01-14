@@ -1,0 +1,11 @@
+@import "../area/area.css";
+
+.areas {
+    text-align: center;
+
+    &__title-box {
+        width: 100%;
+        background: #f2f2f2;
+        padding-top: 58px;
+    }
+}

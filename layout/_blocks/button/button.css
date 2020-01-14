@@ -1,5 +1,6 @@
 .button {
     font-size: 20px;
+    font-weight: 300;
     line-height: calc(26 / 20);
     color: #f2f2f2;
     display: inline-block;
@@ -35,11 +36,11 @@
     }
 
     &--size-l {
-        padding: 16px 27px
+        padding: 14px 27px
     }
 
     &--size-m {
-        padding: 14px 33px;
+        padding: 7px 29px;
     }
 
     &--size-s {

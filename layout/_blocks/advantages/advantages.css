@@ -2,24 +2,24 @@
 
 .advantages {
     text-align: center;
-    padding-top: 67px;
+    padding-top: 65px;
     padding-bottom: 15px;
 
     &__title {
-        margin-bottom: 17px;
+        margin-bottom: 26px;
     }
 
     &__text {
-        max-width: 515px;
+        max-width: 507px;
         margin: 0 auto;
-        margin-bottom: 81px;   
+        margin-bottom: 78px;   
     }
 
     &__list {
         list-style: none;
         display: flex;
         margin: -22px;
-        margin-bottom: 51px;
+        margin-bottom: 28px;
     }
 
     &__item {

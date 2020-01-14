@@ -8,4 +8,9 @@
         font-size: 15px;
         line-height: calc(18 / 15);
     }
+
+    &--letter-spacing {
+        letter-spacing: 0.29px;
+        line-height: calc(24 / 15);
+    }
 }

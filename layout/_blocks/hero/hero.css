@@ -4,16 +4,16 @@
     background-repeat: no-repeat;
     background-position: center -100px;
     background-size: cover;
-    padding-top: 290px;
-    padding-bottom: 220px;
+    padding-top: 303px;
+    padding-bottom: 296px;
     box-sizing: border-box;
-    margin-top: -98px;
+    margin-top: -108px;
     position: relative;
 
     @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
         background: url("../images/background/hero@2x.jpg");
         background-repeat: no-repeat;
-        background-position: center -100px;
+        background-position: center;
         background-size: 100% auto;
     }
 
@@ -26,7 +26,7 @@
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        margin-bottom: 15px;
+        margin-bottom: 13px;
 
         &:before,
         &:after {
@@ -57,8 +57,9 @@
     &__subtitle {
         font-size: 24px;
         line-height: calc(26 / 24);
+        letter-spacing: -0.12px;
         color: var(--white);
-        margin-bottom: 48px;
+        margin-bottom: 44px;
     }
 
     &__actions {
@@ -72,8 +73,8 @@
 
     &__mouse {
         position: absolute;
-        top: 10px;
-        right: -130px;
+        top: 12px;
+        right: -127px;
     }
 
     &__button-slider {
@@ -91,9 +92,9 @@
     &--expand {
         background: url("../images/background/expand.jpg") center top no-repeat;
         background-size: cover;
-        padding-top: 224px;
+        padding-top: 214px;
         margin-top: 0;
-        padding-bottom: 190px;
+        padding-bottom: 208px;
 
         @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
             background: url("../images/background/expand@2x.jpg");
@@ -103,12 +104,16 @@
         }
 
         & .hero__title {
-            margin-bottom: 51px;
+            margin-bottom: 39px;
 
             &:before,
             &:after {
                 display: none;
             }
+        }
+
+        & .hero__button-slider {
+            bottom: 20px;
         }
     }
 }

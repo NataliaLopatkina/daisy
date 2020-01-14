@@ -4,11 +4,11 @@
     &__image-block {
         width: 101px;
         height: 116px;
-        padding-top: 35px;
+        padding-top: 39px;
         box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 21px;
+        margin-bottom: 19px;
         position: relative;
         z-index: 8;
         background: url("../images/svg-icons/big-hexagon.svg") center no-repeat;
@@ -29,7 +29,7 @@
             content: "";
             background: url("../images/svg-icons/small-hexagon.svg");
             display: block;
-            width: 91px;
+            width: 92px;
             height: 104px;
             position: absolute;
             left: 0;
@@ -68,7 +68,7 @@
         color: #868686;
         text-transform: uppercase;
         position: relative;
-        margin-bottom: 34px;
+        margin-bottom: 28px;
 
         &:after {
             content: "";
@@ -79,7 +79,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: -11px;
+            bottom: -9px;
             margin: auto;
         }
     }
