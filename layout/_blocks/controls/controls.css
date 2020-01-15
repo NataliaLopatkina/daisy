@@ -1,0 +1,40 @@
+.controls {
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        border-radius: 50%;
+        transition-property: color, background;
+        transition-duration: 0.25s;
+        transition-timing-function: ease;
+        margin-right: 26px;
+
+        &:hover {
+            background: var(--main-color);
+            border-radius: 50%;
+
+            & .controls__button-image {
+                color: var(--white);
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__button {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    &__button-image {
+        color: var(--main-color);
+        width: 31px;
+        height: 31px;
+    }
+}

@@ -1,0 +1,13 @@
+mixin controls()
+    div(class="controls")
+        ul(class="controls__list")
+            li(class="controls__item")
+                button(class="controls__button" type="button")
+                    svg(class="icon icon--fill controls__button-image")
+                        use(xlink:href="images/svg-sprite/svg-sprite.svg#arrow-left")
+            li(class="controls__item")
+                button(class="controls__button" type="button")
+                    svg(class="icon icon--fill controls__button-image")
+                        use(xlink:href="images/svg-sprite/svg-sprite.svg#arrow-right")
+
+    // END .controls

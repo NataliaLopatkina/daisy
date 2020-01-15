@@ -1,0 +1,28 @@
+mixin social-links(obj)
+    div(class="social-links")
+        ul(class="social-links__list")
+            -
+                var links = [
+                    {
+                        href: obj.href1,
+                        image: "twitter",
+                    },
+
+                    {
+                        href: obj.href2,
+                        image: "facebook",
+                    },
+
+                    {
+                        href: obj.href3,
+                        image: "linkedin",
+                    },
+                ]
+
+            each item in links
+                li(class="social-links__item")
+                    a(class="social-links__link" href=item.href)
+                        svg(class="icon icon--fill social-links__image")
+                            use(xlink:href="images/svg-sprite/svg-sprite.svg#" + item.image)
+
+    // END .social-links

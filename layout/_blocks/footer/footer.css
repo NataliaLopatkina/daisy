@@ -1,0 +1,22 @@
+@import "../footer-logo/footer-logo.css";
+
+.footer {
+    background: url("../images/background/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 101px;
+    padding-bottom: 65px;
+
+    @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+        background: url("../images/background/footer@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    &__logo {
+        width: 185px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

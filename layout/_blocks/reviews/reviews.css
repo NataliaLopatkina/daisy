@@ -1,0 +1,49 @@
+@import "../review/review.css";
+@import "../controls/controls.css";
+
+.reviews {
+    padding-top: 52px;
+    padding-bottom: 165px;
+
+    &__list {
+        margin-bottom: 52px;
+    }
+
+    &__logo {
+        width: 74px;
+        height: 86px;
+        margin-left: auto;
+        margin-right: auto;
+        background: url("../images/svg-icons/big-hexagon.svg");
+        background-size: 100%;
+        position: relative;
+        margin-bottom: 74px;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 68px;
+            height: 78px;
+            background: url("../images/svg-icons/small-hexagon.svg");
+            background-size: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+
+    &__logo-image {
+        color: var(--white);
+        width: 34px;
+        height: 29px;
+        padding-top: 28px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 10;
+    }
+}

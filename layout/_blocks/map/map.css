@@ -1,0 +1,24 @@
+@import "../address/address.css";
+
+.map {
+    position: relative;
+    min-height: 336px;
+    background: url("../images/map/map.jpg") no-repeat;
+    background-position-x: left;
+    background-size: cover;
+
+    @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+        background: url("../images/map/map@2x.jpg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-size: cover;
+    }
+
+    &__address {
+        position: absolute;
+        top: -121px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}

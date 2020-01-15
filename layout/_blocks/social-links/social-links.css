@@ -1,0 +1,18 @@
+.social-links {
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: -9px;
+    }
+
+    &__item {
+        margin: 9px;
+    }
+
+    &__image {
+        width: 37px;
+        height: 37px;
+        color: #565656;
+    }
+}

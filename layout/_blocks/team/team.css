@@ -1,0 +1,33 @@
+@import "../team-item/team-item.css";
+
+.team {
+    background: #f2f2f2;
+    padding-top: 52px;
+    padding-bottom: 12px;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 84px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: -10px;
+        margin-bottom: 61px;
+    }
+
+    &__item {
+        width: calc(100% / 3 - 20px);
+        flex-shrink: 0;
+        margin: 10px;
+    }
+
+    &__button-slider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

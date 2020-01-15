@@ -1,0 +1,29 @@
+mixin reviews()
+    section(class="reviews")
+        div(class="box")
+            h3(class="visually-hidden") Reviews
+            div(class="reviews__logo")
+                svg(class="reviews__logo-image icon icon--fill")
+                    use(xlink:href="images/svg-sprite/svg-sprite.svg#quotes")
+
+            div(class="reviews__list")
+            
+                include ../../_blocks/review/review.pug
+                -
+                    var reviews = [
+                        {
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-",
+                            image: "author-1",
+                            name: "Alan",
+                            lastName: "Richman",
+                            profession: "CEO of Romashka",
+                        }
+                    ]
+
+                each obj in reviews
+                    +review(obj)
+
+            include ../../_blocks/controls/controls.pug
+            +controls()
+
+    // END .reviews

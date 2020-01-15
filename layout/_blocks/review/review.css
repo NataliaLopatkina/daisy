@@ -1,0 +1,39 @@
+.review {
+    display: flex;
+
+    &__text {
+        line-height: calc(21 / 15);
+        text-align: justify;
+        max-width: 319px;
+        padding-top: 57px;
+    }
+
+    &__image-box {
+        width: 160px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    &__author {
+        padding-top: 57px;
+    }
+
+    &__name {
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: -0.14px;
+        color: var(--main-color);
+        margin-bottom: 7px;
+    }
+
+    &__name--mark {
+        color: #818181;
+    }
+
+    &__profession {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: calc(41 / 20);
+        color: #818181;
+    }
+}

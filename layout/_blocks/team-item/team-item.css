@@ -1,0 +1,29 @@
+@import "../social-links/social-links.css";
+
+.team-item {
+    &__image-box {
+        max-width: 147px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 21px;
+    }
+
+    &__name {
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: -0.14px;
+        color: var(--main-color);
+        margin-bottom: 4px;
+    }
+
+    &__name--mark {
+        color: #565656;
+    }
+
+    &__profession {
+        font-size: 20px;
+        line-height: calc(34 / 20);
+        letter-spacing: -0.1px;
+        margin-bottom: 7px;
+    }
+}

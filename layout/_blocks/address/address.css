@@ -1,0 +1,47 @@
+.address {
+    text-align: center;
+    width: 209px;
+    height: 242px;
+    padding-left: 20px;
+    padding-right: 23px;
+    padding-top: 72px;
+    box-sizing: border-box;
+    background: url("../images/svg-icons/big-hexagon.svg") no-repeat;
+    background-size: 100%;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 189px;
+        height: 218px;
+        background: url("../images/svg-icons/small-hexagon.svg") no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    &__title {
+        font-size: 27px;
+        font-weight: 500;
+        color: var(--white);
+        position: relative;
+        z-index: 100;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: calc(21 / 15);
+        letter-spacing: -0.07px;
+        color: var(--white);
+        text-align: left;
+        padding-left: 7px;
+        position: relative;
+        z-index: 100;
+    }
+}

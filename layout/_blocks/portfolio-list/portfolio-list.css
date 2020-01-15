@@ -10,6 +10,14 @@
         width: calc(100% / 4 - 12px);
         height: 200px;
         margin: 6px;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            & .portfolio-list__details {
+                opacity: 1;
+            }
+        }
 
         &:first-child {
             width: calc(100% / 2 - 12px);
@@ -22,5 +30,42 @@
 
     &__image {
         height: 100%;
+    }
+
+    &__details {
+        text-align: left;
+        background: rgb(252, 99, 94, 0.78);
+        width: 100%;
+        height: 100%;
+        padding-top: 22px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+    }
+
+    &__details-title {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.14px;
+        color: var(--white);
+        text-transform: uppercase;
+        padding-left: 22px;
+    }
+
+    &__details-button {
+        font-size: 104px;
+        font-weight: 700;
+        letter-spacing: -0.1px;
+        line-height: calc(92 / 104);
+        color: var(--white);
+        text-transform: uppercase;
+        display: block;
+        background: none;
+        border: none;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

@@ -1,0 +1,62 @@
+mixin team()
+    section(class="team")
+        div(class="box")
+            h3(class="title team__title") Our 
+                span(class="title--mark") team
+
+            ul(class="team__list")
+            
+                -
+                    var team = [
+                        {
+                            photo: "team-item-1",
+                            name: "Tomothy",
+                            nameMark: "Bowman",
+                            profession: "Marketing",
+                            href1: "#twitter",
+                            href2: "#facebook",
+                            href3: "#linkedin",
+                        },
+
+                        {
+                            photo: "team-item-2",
+                            name: "Steve",
+                            nameMark: "Tracy",
+                            profession: "CEO",
+                            href1: "#twitter",
+                            href2: "#facebook",
+                            href3: "#linkedin",
+                        },
+
+                        {
+                            photo: "team-item-3",
+                            name: "Hellen",
+                            nameMark: "Johns",
+                            profession: "Clients",
+                            href1: "#twitter",
+                            href2: "#facebook",
+                            href3: "#linkedin",
+                        },
+                    ]
+
+                each item in team
+                    li(class="team__item team-item")
+                        div(class="image-box team-item__image-box")
+                            img(class="image-box__image",
+                                src="images/team/" + item.photo + ".png",
+                                srcset="images/team/" + item.photo + ".png 2x",
+                                alt=item.photo)
+                        p(class="team-item__name") !{item.name} 
+                            span(class="team-item__name--mark") !{item.nameMark}
+                        p(class="team-item__profession") !{item.profession}
+
+                        include ../../_blocks/social-links/social-links.pug
+                        +social-links({
+                            href1: item.href1,
+                            href2: item.href2,
+                            href3: item.href3,
+                        })
+
+            include ../../_blocks/button-slider/button-slider.pug
+            +button-slider()(class="button-slider--stroke team__button-slider")
+    // END .team                       

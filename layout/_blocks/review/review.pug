@@ -1,0 +1,13 @@
+mixin review(obj)
+    div(class="review")
+        p(class="text text--size-s review__text") !{obj.text}
+        div(class="image-box review__image-box")
+            img(class="image-box__image",
+                src="images/reviews/" + obj.image + ".png",
+                srcset="images/reviews/" + obj.image + ".png 2x")
+        div(class="review__author")
+            p(class="review__name") !{obj.name} 
+                span(class="review__name--mark") !{obj.lastName}
+            p(class="review__profession") !{obj.profession}
+
+    // END .review
