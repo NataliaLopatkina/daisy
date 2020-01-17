@@ -27,6 +27,6 @@ mixin hero(obj)
                         alt="Mouse")
 
             include ../../_blocks/button-slider/button-slider.pug
-            +button-slider()(class="hero__button-slider")
+            +button-slider()(class=obj.buttonClass)
 
     // END .hero

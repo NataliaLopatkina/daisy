@@ -41,7 +41,10 @@
         padding: 0;
         border: none;
         background: none;
-        
+
+        &.is-active {
+            color: #565656;
+        }
 
         &:focus {
             outline: none;

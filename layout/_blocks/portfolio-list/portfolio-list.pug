@@ -6,31 +6,37 @@ mixin portfolio-list()
                 var list = [
                     {
                         image: "work-1",
+                        data: "Entertainment",
                     },
 
                     {
                         image: "work-2",
+                        data: "Sport",
                     },
 
                     {
                         image: "work-3",
+                        data: "Business",
                     },
 
                     {
                         image: "work-4",
+                        data: "Building",
                     },
 
                     {
                         image: "work-5",
+                        data: "Entertainment",
                     },
 
                     {
                         image: "work-6",
+                        data: "Sport",
                     },
                 ]
 
             each item in list
-                li(class="image-box portfolio-list__item")
+                li(class="image-box portfolio-list__item" data-work=item.data)
                     img(class="image-box__image portfolio-list__image",
                         src="images/portfolio/" + item.image + ".jpg",
                         srcset="images/portfolio/" + item.image + ".jpg 2x",

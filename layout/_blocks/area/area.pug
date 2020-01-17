@@ -21,6 +21,6 @@ mixin area(obj)
                     alt=obj.image)
 
         include ../../_blocks/button-slider/button-slider.pug
-        +button-slider()(class="button-slider--stroke area__button-slider")
+        +button-slider()(class="button-slider--stroke area__button-slider " + obj.modClassButton)
 
     // END .area

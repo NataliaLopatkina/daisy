@@ -925,7 +925,7 @@ button[disabled] {
             content: "";
             background: url("../images/svg-icons/small-hexagon.svg");
             display: block;
-            width: 92px;
+            width: 91px;
             height: 104px;
             position: absolute;
             left: 0;
@@ -1282,32 +1282,32 @@ button[disabled] {
             padding-top: 36px;
         }
 
-.area--adverting {
+.area--advertising {
         padding-top: 134px;
         padding-bottom: 15px
     }
 
-.area--adverting .area__box {
+.area--advertising .area__box {
             margin-bottom: 105px;
         }
 
-.area--adverting .area__text-box {
+.area--advertising .area__text-box {
             text-align: right;
             padding-top: 25px;
         }
 
-.area--adverting .area__title {
+.area--advertising .area__title {
             padding-left: 0;
             padding-right: 22px;
             margin-bottom: 19px
         }
 
-.area--adverting .area__title:before {
+.area--advertising .area__title:before {
                 left: auto;
                 right: 2px;
             }
 
-.area--adverting .area__text {
+.area--advertising .area__text {
             margin-bottom: 31px;
         }
 
@@ -1386,6 +1386,10 @@ button[disabled] {
         background: none
     }
 
+.portfolio-toggles__button.is-active {
+            color: #565656;
+        }
+
 .portfolio-toggles__button:focus {
             outline: none;
         }
@@ -1407,6 +1411,10 @@ button[disabled] {
         position: relative;
         cursor: pointer
     }
+
+.portfolio-list__item.not-active {
+            display: none;
+        }
 
 .portfolio-list__item:hover .portfolio-list__details {
                 opacity: 1;
@@ -1501,13 +1509,21 @@ button[disabled] {
     }
 
 .social-links__item {
-        margin: 9px;
+        margin: 9px
     }
+
+.social-links__item:hover .social-links__image {
+                color: #fc635e;
+                color: var(--main-color);
+            }
 
 .social-links__image {
         width: 37px;
         height: 37px;
         color: #565656;
+        -webkit-transition: color 0.25s ease;
+        -o-transition: color 0.25s ease;
+        transition: color 0.25s ease;
     }
 
 .team-item__image-box {
@@ -1578,6 +1594,9 @@ button[disabled] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: calc(100% + 15px);
 }
 
 .review__text {
@@ -1659,8 +1678,12 @@ button[disabled] {
 .controls__button {
         background: none;
         border: none;
-        padding: 0;
+        padding: 0
     }
+
+.controls__button:focus {
+            outline: none;
+        }
 
 .controls__button-image {
         color: #fc635e;
@@ -1674,7 +1697,14 @@ button[disabled] {
     padding-bottom: 165px;
 }
 
+.reviews__box {
+        overflow-x: hidden;
+    }
+
 .reviews__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         margin-bottom: 52px;
     }
 

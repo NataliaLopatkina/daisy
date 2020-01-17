@@ -1,6 +1,6 @@
 mixin reviews()
     section(class="reviews")
-        div(class="box")
+        div(class="box reviews__box")
             h3(class="visually-hidden") Reviews
             div(class="reviews__logo")
                 svg(class="reviews__logo-image icon icon--fill")
@@ -17,7 +17,23 @@ mixin reviews()
                             name: "Alan",
                             lastName: "Richman",
                             profession: "CEO of Romashka",
-                        }
+                        },
+                        
+                        {
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-",
+                            image: "author-1",
+                            name: "Alan",
+                            lastName: "Richman",
+                            profession: "CEO of Romashka",
+                        },
+
+                        {
+                            text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-",
+                            image: "author-1",
+                            name: "Alan",
+                            lastName: "Richman",
+                            profession: "CEO of Romashka",
+                        },
                     ]
 
                 each obj in reviews

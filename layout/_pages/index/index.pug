@@ -16,7 +16,8 @@ html(lang="en")
                 mainHero: true,
                 titleMark: "Clients",
                 title: "in your business",
-                textButton: "I want clients"
+                textButton: "I want clients",
+                buttonClass: "hero__button-slider",
             })
 
             include ../../_blocks/advantages/advantages.pug
@@ -27,7 +28,8 @@ html(lang="en")
                 mainHero: false,
                 titleMark: "Expand",
                 title: "your business",
-                textButton: "Join Us"
+                textButton: "Join Us",
+                buttonClass: "hero__button-slider hero__button-expand",
             })
 
             include ../../_blocks/steps/steps.pug
@@ -50,3 +52,5 @@ html(lang="en")
 
         include ../../_blocks/footer/footer.pug
         +footer()
+
+        script(src="scripts/script.js")

@@ -13,6 +13,10 @@
         position: relative;
         cursor: pointer;
 
+        &.not-active {
+            display: none;
+        }
+
         &:hover {
             & .portfolio-list__details {
                 opacity: 1;

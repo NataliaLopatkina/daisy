@@ -8,11 +8,18 @@
 
     &__item {
         margin: 9px;
+
+        &:hover {
+            & .social-links__image {
+                color: var(--main-color);
+            }
+        }
     }
 
     &__image {
         width: 37px;
         height: 37px;
         color: #565656;
+        transition: color 0.25s ease;
     }
 }

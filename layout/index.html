@@ -84,7 +84,7 @@
                         <span class="button__text">Join Us</span>
                     </a>
                     <!-- END .button-->
-                </div><button class="button-slider hero__button-slider" type="button"><svg class="button-slider__image">
+                </div><button class="button-slider hero__button-slider hero__button-expand" type="button"><svg class="button-slider__image">
                         <use xlink:href="images/svg-sprite/svg-sprite.svg#arrow"></use>
                     </svg></button><!-- END .button-slider-->
             </div>
@@ -138,11 +138,11 @@
                             <!-- END .button-->
                         </div>
                         <div class="image-box area__image-box"><img class="image-box__image area__image" src="images/areas/devices.png" srcset="images/areas/devices@2x.png 2x" alt="devices" /></div>
-                    </div><button class="button-slider button-slider--stroke area__button-slider" type="button"><svg class="button-slider__image">
+                    </div><button class="button-slider button-slider--stroke area__button-slider area__button-slider--landing" type="button"><svg class="button-slider__image">
                             <use xlink:href="images/svg-sprite/svg-sprite.svg#arrow"></use>
                         </svg></button><!-- END .button-slider-->
                 </div><!-- END .area-->
-                <div class="area area--adverting area--reverse ">
+                <div class="area area--advertising area--reverse ">
                     <div class="box area__box">
                         <div class="area__text-box">
                             <p class="area__title">Advertising</p>
@@ -152,7 +152,7 @@
                             <!-- END .button-->
                         </div>
                         <div class="image-box area__image-box"><img class="image-box__image area__image" src="images/areas/mackbook.png" srcset="images/areas/mackbook@2x.png 2x" alt="mackbook" /></div>
-                    </div><button class="button-slider button-slider--stroke area__button-slider" type="button"><svg class="button-slider__image">
+                    </div><button class="button-slider button-slider--stroke area__button-slider area__button-slider--advertising" type="button"><svg class="button-slider__image">
                             <use xlink:href="images/svg-sprite/svg-sprite.svg#arrow"></use>
                         </svg></button><!-- END .button-slider-->
                 </div><!-- END .area-->
@@ -166,7 +166,7 @@
                             <!-- END .button-->
                         </div>
                         <div class="image-box area__image-box"><img class="image-box__image area__image" src="images/areas/marketing.png" srcset="images/areas/marketing@2x.png 2x" alt="marketing" /></div>
-                    </div><button class="button-slider button-slider--stroke area__button-slider" type="button"><svg class="button-slider__image">
+                    </div><button class="button-slider button-slider--stroke area__button-slider area__button-slider--marketing" type="button"><svg class="button-slider__image">
                             <use xlink:href="images/svg-sprite/svg-sprite.svg#arrow"></use>
                         </svg></button><!-- END .button-slider-->
                 </div><!-- END .area-->
@@ -175,43 +175,43 @@
         <section class="portfolio">
             <div class="box">
                 <h3 class="title portfolio__title">Portfolio</h3>
-                <div class="portfolio-toggles">
+                <div class="portfolio-togglesundefined">
                     <ul class="portfolio-toggles__list">
-                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button">All</button></li>
-                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button">Entertainment</button></li>
-                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button">Sport</button></li>
-                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button">Business</button></li>
-                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button">Building</button></li>
+                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button is-active" type="button" data-button="All">All</button></li>
+                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button" data-button="Entertainment">Entertainment</button></li>
+                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button" data-button="Sport">Sport</button></li>
+                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button" data-button="Business">Business</button></li>
+                        <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button" data-button="Building">Building</button></li>
                     </ul>
                 </div><!-- END .portfolio-toggles-->
                 <div class="portfolio-list portfolio__list">
                     <ul class="portfolio-list__content">
-                        <li class="image-box portfolio-list__item"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-1.jpg" srcset="images/portfolio/work-1.jpg 2x" alt="work-1" />
+                        <li class="image-box portfolio-list__item" data-work="Entertainment"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-1.jpg" srcset="images/portfolio/work-1.jpg 2x" alt="work-1" />
                             <div class="portfolio-list__details">
                                 <p class="portfolio-list__details-title">Title</p><button class="portfolio-list__details-button" type="button">+</button>
                             </div>
                         </li>
-                        <li class="image-box portfolio-list__item"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-2.jpg" srcset="images/portfolio/work-2.jpg 2x" alt="work-2" />
+                        <li class="image-box portfolio-list__item" data-work="Sport"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-2.jpg" srcset="images/portfolio/work-2.jpg 2x" alt="work-2" />
                             <div class="portfolio-list__details">
                                 <p class="portfolio-list__details-title">Title</p><button class="portfolio-list__details-button" type="button">+</button>
                             </div>
                         </li>
-                        <li class="image-box portfolio-list__item"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-3.jpg" srcset="images/portfolio/work-3.jpg 2x" alt="work-3" />
+                        <li class="image-box portfolio-list__item" data-work="Business"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-3.jpg" srcset="images/portfolio/work-3.jpg 2x" alt="work-3" />
                             <div class="portfolio-list__details">
                                 <p class="portfolio-list__details-title">Title</p><button class="portfolio-list__details-button" type="button">+</button>
                             </div>
                         </li>
-                        <li class="image-box portfolio-list__item"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-4.jpg" srcset="images/portfolio/work-4.jpg 2x" alt="work-4" />
+                        <li class="image-box portfolio-list__item" data-work="Building"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-4.jpg" srcset="images/portfolio/work-4.jpg 2x" alt="work-4" />
                             <div class="portfolio-list__details">
                                 <p class="portfolio-list__details-title">Title</p><button class="portfolio-list__details-button" type="button">+</button>
                             </div>
                         </li>
-                        <li class="image-box portfolio-list__item"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-5.jpg" srcset="images/portfolio/work-5.jpg 2x" alt="work-5" />
+                        <li class="image-box portfolio-list__item" data-work="Entertainment"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-5.jpg" srcset="images/portfolio/work-5.jpg 2x" alt="work-5" />
                             <div class="portfolio-list__details">
                                 <p class="portfolio-list__details-title">Title</p><button class="portfolio-list__details-button" type="button">+</button>
                             </div>
                         </li>
-                        <li class="image-box portfolio-list__item"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-6.jpg" srcset="images/portfolio/work-6.jpg 2x" alt="work-6" />
+                        <li class="image-box portfolio-list__item" data-work="Sport"><img class="image-box__image portfolio-list__image" src="images/portfolio/work-6.jpg" srcset="images/portfolio/work-6.jpg 2x" alt="work-6" />
                             <div class="portfolio-list__details">
                                 <p class="portfolio-list__details-title">Title</p><button class="portfolio-list__details-button" type="button">+</button>
                             </div>
@@ -289,12 +289,28 @@
             </div>
         </section><!-- END .team                       -->
         <section class="reviews">
-            <div class="box">
+            <div class="box reviews__box">
                 <h3 class="visually-hidden">Reviews</h3>
                 <div class="reviews__logo"><svg class="reviews__logo-image icon icon--fill">
                         <use xlink:href="images/svg-sprite/svg-sprite.svg#quotes"></use>
                     </svg></div>
                 <div class="reviews__list">
+                    <div class="review">
+                        <p class="text text--size-s review__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-</p>
+                        <div class="image-box review__image-box"><img class="image-box__image" src="images/reviews/author-1.png" srcset="images/reviews/author-1.png 2x" /></div>
+                        <div class="review__author">
+                            <p class="review__name">Alan <span class="review__name--mark">Richman</span></p>
+                            <p class="review__profession">CEO of Romashka</p>
+                        </div>
+                    </div><!-- END .review-->
+                    <div class="review">
+                        <p class="text text--size-s review__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-</p>
+                        <div class="image-box review__image-box"><img class="image-box__image" src="images/reviews/author-1.png" srcset="images/reviews/author-1.png 2x" /></div>
+                        <div class="review__author">
+                            <p class="review__name">Alan <span class="review__name--mark">Richman</span></p>
+                            <p class="review__profession">CEO of Romashka</p>
+                        </div>
+                    </div><!-- END .review-->
                     <div class="review">
                         <p class="text text--size-s review__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-</p>
                         <div class="image-box review__image-box"><img class="image-box__image" src="images/reviews/author-1.png" srcset="images/reviews/author-1.png 2x" /></div>
@@ -331,6 +347,7 @@
                 </a></div><!-- END .logo-->
         </div>
     </footer><!-- END .footer-->
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

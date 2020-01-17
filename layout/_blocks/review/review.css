@@ -1,5 +1,7 @@
 .review {
     display: flex;
+    flex-shrink: 0;
+    width: calc(100% + 15px);
 
     &__text {
         line-height: calc(21 / 15);

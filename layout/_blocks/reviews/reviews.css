@@ -5,7 +5,12 @@
     padding-top: 52px;
     padding-bottom: 165px;
 
+    &__box {
+        overflow-x: hidden;
+    }
+
     &__list {
+        display: flex;
         margin-bottom: 52px;
     }
 

@@ -1,10 +1,12 @@
 mixin portfolio-toggles()
-    div(class="portfolio-toggles")
+
+    div(class="portfolio-toggles" + typeAdvantage)
         ul(class="portfolio-toggles__list")
             -
                 var toggles = [
                     {
                         text: "All",
+                        modClass: true,
                     },
 
                     {
@@ -25,7 +27,13 @@ mixin portfolio-toggles()
                 ]
 
             each item in toggles
+                - var modClass = ""
+                if item.modClass
+                    - modClass = " is-active"
+
                 li(class="portfolio-toggles__item")
-                    button(class="portfolio-toggles__button" type="button") !{item.text}
+                    button(class="portfolio-toggles__button" + modClass,
+                        type="button",
+                        data-button=item.text) !{item.text}
 
     // END .portfolio-toggles
