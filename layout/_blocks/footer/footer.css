@@ -8,10 +8,18 @@
     padding-top: 101px;
     padding-bottom: 65px;
 
+    @media (--L) {
+        background-size: cover;
+    }
+
     @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
         background: url("../images/background/footer@2x.jpg");
         background-repeat: no-repeat;
         background-size: 100% auto;
+
+        @media (--L) {
+            background-size: cover;
+        }
     }
 
     &__logo {

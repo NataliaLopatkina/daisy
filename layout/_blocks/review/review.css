@@ -1,13 +1,28 @@
 .review {
     display: flex;
     flex-shrink: 0;
-    width: calc(100% + 15px);
+    width: 940px;
+
+    @media (--L) {
+        width: 992px;
+        padding-left: 30px;
+        box-sizing: border-box;
+    }
+
+    @media (--M) {
+        width: 768px;
+        padding-left: 15px;
+    }
 
     &__text {
         line-height: calc(21 / 15);
         text-align: justify;
         max-width: 319px;
         padding-top: 57px;
+
+        @media (--M) {
+            max-width: 237px;
+        }
     }
 
     &__image-box {

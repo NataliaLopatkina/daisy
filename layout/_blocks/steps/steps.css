@@ -8,12 +8,24 @@
         position: relative;
         padding-bottom: 209px;
 
+        @media (--M) {
+            padding-bottom: 0;
+        }
+
         &:after {
             content: url("../images/background/process.png");
             position: absolute;
             left: 138px;
             bottom: 32px;
             z-index: -1;
+
+            @media (--L) {
+                left: 150px;
+            }
+
+            @media (--M) {
+                display: none;
+            }
         }
     }
 
@@ -33,6 +45,10 @@
         display: flex;
         flex-wrap: wrap;
         padding-left: 81px;
+
+        @media (--M) {
+            padding-left: 0;
+        }
     }
 
     &__button-slider {

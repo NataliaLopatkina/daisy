@@ -1,4 +1,5 @@
 @import "../nav/nav.css";
+@import "../nav-small-device/nav-small-device.css";
 
 .header {
     padding-top: 38px;

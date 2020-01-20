@@ -10,11 +10,27 @@
     margin-top: -108px;
     position: relative;
 
+    @media (--XL) {
+        margin-top: -126px;
+    }
+
+    @media (--L) {
+        background-size: cover;
+    }
+
     @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
         background: url("../images/background/hero@2x.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% auto;
+
+        @media (--XL) {
+            margin-top: -126px;
+        }
+
+        @media (--L) {
+            background-size: cover;
+        }
     }
 
     &__title {
@@ -39,6 +55,10 @@
             top: 0;
             bottom: 0;
             margin: auto;
+
+            @media (--M) {
+                display: none;
+            }
         }
 
         &:before {
@@ -96,11 +116,20 @@
         margin-top: 0;
         padding-bottom: 208px;
 
+        @media (--XL) {
+            margin-top: 0;
+        }
+
         @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
             background: url("../images/background/expand@2x.jpg");
             background-repeat: no-repeat;
             background-position: center top;
             background-size: 100% auto;
+
+            @media (--XL) {
+                padding-top: 181px;
+                margin-top: 0;
+            }
         }
 
         & .hero__title {

@@ -6,6 +6,10 @@
     padding-bottom: 14px;
     text-align: center;
 
+    &__box  {
+        overflow: hidden;
+    }
+
     &__title {
         margin-bottom: 50px;
     }

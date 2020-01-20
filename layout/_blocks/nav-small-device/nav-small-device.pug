@@ -1,0 +1,34 @@
+mixin nav-small-device()
+    nav(class="nav-small-device")
+        div(class="nav-small-device__actions")
+            include ../../_blocks/logo/logo.pug
+            +logo()
+
+            button(class="button-menu" type="button")
+                span(class="button-menu__line")
+
+        ul(class="nav-small-device__list")
+            -
+                var links = [
+                    {
+                        text: "About",
+                    },
+
+                    {
+                        text: "Portfolio",
+                    },
+
+                    {
+                        text: "Services",
+                    },
+
+                    {
+                        text: "Contact",
+                    }
+                ]
+
+            each item in links
+                li(class="nav-small-device__item")
+                    a(class="nav-small-device__link" href="#5") !{item.text}
+
+    // END .nav

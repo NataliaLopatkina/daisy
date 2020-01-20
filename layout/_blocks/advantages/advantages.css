@@ -5,6 +5,10 @@
     padding-top: 65px;
     padding-bottom: 15px;
 
+    &__box {
+        overflow: hidden;
+    }
+
     &__title {
         margin-bottom: 26px;
     }
@@ -20,10 +24,19 @@
         display: flex;
         margin: -22px;
         margin-bottom: 28px;
+
+        @media (--M) {
+            margin: -10px;
+            margin-bottom: 15px;
+        }
     }
 
     &__item {
         margin: 22px;
+
+        @media (--M) {
+            margin: 10px;
+        }
     }
 
     &__button-slider {

@@ -22,6 +22,19 @@
                     <li class="nav__item"><a class="nav__link" href="#5">Contact</a></li>
                 </ul>
             </nav><!-- END .nav-->
+            <nav class="nav-small-device">
+                <div class="nav-small-device__actions">
+                    <div class="logo"><a class="logo__link" href="#5">
+                            <p class="logo__figure"><span class="logo__figure-text">D</span></p><span class="logo__text">Daisy</span>
+                        </a></div><!-- END .logo--><button class="button-menu" type="button"><span class="button-menu__line"></span></button>
+                </div>
+                <ul class="nav-small-device__list">
+                    <li class="nav-small-device__item"><a class="nav-small-device__link" href="#5">About</a></li>
+                    <li class="nav-small-device__item"><a class="nav-small-device__link" href="#5">Portfolio</a></li>
+                    <li class="nav-small-device__item"><a class="nav-small-device__link" href="#5">Services</a></li>
+                    <li class="nav-small-device__item"><a class="nav-small-device__link" href="#5">Contact</a></li>
+                </ul>
+            </nav><!-- END .nav-->
         </div>
     </header><!-- END .header-->
     <main class="main">
@@ -40,7 +53,7 @@
             </div>
         </div><!-- END .hero-->
         <section class="advantages">
-            <div class="box">
+            <div class="box advantages__box">
                 <h2 class="title advantages__title">What can <span class="title--mark">you receive?</span></h2>
                 <p class="text advantages__text">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum</p>
                 <ul class="advantages__list">
@@ -173,9 +186,9 @@
             </div>
         </section><!-- END .areas-->
         <section class="portfolio">
-            <div class="box">
+            <div class="box portfolio__box">
                 <h3 class="title portfolio__title">Portfolio</h3>
-                <div class="portfolio-togglesundefined">
+                <div class="portfolio-toggles">
                     <ul class="portfolio-toggles__list">
                         <li class="portfolio-toggles__item"><button class="portfolio-toggles__button is-active" type="button" data-button="All">All</button></li>
                         <li class="portfolio-toggles__item"><button class="portfolio-toggles__button" type="button" data-button="Entertainment">Entertainment</button></li>
@@ -296,7 +309,7 @@
                     </svg></div>
                 <div class="reviews__list">
                     <div class="review">
-                        <p class="text text--size-s review__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-</p>
+                        <p class="text text--size-s review__text">1 This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-</p>
                         <div class="image-box review__image-box"><img class="image-box__image" src="images/reviews/author-1.png" srcset="images/reviews/author-1.png 2x" /></div>
                         <div class="review__author">
                             <p class="review__name">Alan <span class="review__name--mark">Richman</span></p>
@@ -304,7 +317,7 @@
                         </div>
                     </div><!-- END .review-->
                     <div class="review">
-                        <p class="text text--size-s review__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-</p>
+                        <p class="text text--size-s review__text">2 This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-</p>
                         <div class="image-box review__image-box"><img class="image-box__image" src="images/reviews/author-1.png" srcset="images/reviews/author-1.png 2x" /></div>
                         <div class="review__author">
                             <p class="review__name">Alan <span class="review__name--mark">Richman</span></p>
@@ -312,7 +325,7 @@
                         </div>
                     </div><!-- END .review-->
                     <div class="review">
-                        <p class="text text--size-s review__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-</p>
+                        <p class="text text--size-s review__text">3 This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici- tudin, lorem quis bibendum auctor, nisi elit conse-</p>
                         <div class="image-box review__image-box"><img class="image-box__image" src="images/reviews/author-1.png" srcset="images/reviews/author-1.png 2x" /></div>
                         <div class="review__author">
                             <p class="review__name">Alan <span class="review__name--mark">Richman</span></p>
@@ -322,10 +335,10 @@
                 </div>
                 <div class="controls">
                     <ul class="controls__list">
-                        <li class="controls__item"><button class="controls__button" type="button"><svg class="icon icon--fill controls__button-image">
+                        <li class="controls__item"><button class="controls__button controls__button--prev" type="button"><svg class="icon icon--fill controls__button-image">
                                     <use xlink:href="images/svg-sprite/svg-sprite.svg#arrow-left"></use>
                                 </svg></button></li>
-                        <li class="controls__item"><button class="controls__button" type="button"><svg class="icon icon--fill controls__button-image">
+                        <li class="controls__item"><button class="controls__button controls__button--next" type="button"><svg class="icon icon--fill controls__button-image">
                                     <use xlink:href="images/svg-sprite/svg-sprite.svg#arrow-right"></use>
                                 </svg></button></li>
                     </ul>

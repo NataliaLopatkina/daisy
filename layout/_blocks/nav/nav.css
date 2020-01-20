@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media (--S) {
+        display: none;
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;

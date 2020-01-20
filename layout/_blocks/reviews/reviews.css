@@ -6,12 +6,19 @@
     padding-bottom: 165px;
 
     &__box {
+        width: 940px;
+        padding: 0;
         overflow-x: hidden;
     }
 
     &__list {
         display: flex;
         margin-bottom: 52px;
+        transform: translateX(0);
+
+        &.transition {
+            transition: transform 1s ease;
+        }
     }
 
     &__logo {
