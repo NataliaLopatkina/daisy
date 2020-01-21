@@ -8,6 +8,14 @@
         border-top: 1px solid #adadad;
         border-bottom: 1px solid #adadad;
         margin-bottom: 46px;
+
+        @media (--S) {
+            margin-bottom: 30px;
+        }
+
+        @media (--XS) {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -16,6 +24,15 @@
 
         @media (--M) {
             margin-right: 78px;
+        }
+
+        @media (--S) {
+            margin-right: 22px;
+        }
+
+        @media (--XS) {
+            margin-right: 0;
+            margin-bottom: 5px;
         }
 
         &:after {
@@ -29,10 +46,14 @@
             @media (--M) {
                 right: -45px;
             }
+
+            @media (--S) {
+                display: none;
+            }
         }
 
         &:last-child {
-            margin-right: 0;
+            margin: 0;
 
             &:after {
                 display: none;

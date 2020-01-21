@@ -31,6 +31,10 @@
         position: relative;
         margin-bottom: 74px;
 
+        @media (--S) {
+            margin-bottom: 30px;
+        }
+
         &:before {
             content: "";
             display: block;

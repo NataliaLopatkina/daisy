@@ -51,8 +51,6 @@
 
         @media (--S) {
             width: 540px;
-            padding-left: 30px;
-            padding-right: 30px;
         }
 
         @media (--XS) {

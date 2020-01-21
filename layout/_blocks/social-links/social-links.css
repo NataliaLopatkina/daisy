@@ -4,10 +4,18 @@
         display: flex;
         justify-content: center;
         margin: -9px;
+
+        @media (--S) {
+            margin: -5px;
+        }
     }
 
     &__item {
         margin: 9px;
+
+        @media (--S) {
+            margin: 5px;
+        }
 
         &:hover {
             & .social-links__image {

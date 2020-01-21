@@ -1,6 +1,10 @@
 .advantage {
     max-width: calc(100% / 4);
 
+    @media (--S) {
+        max-width: calc(100% / 2 - 20px);
+    }
+
     &__image-block {
         width: 101px;
         height: 116px;

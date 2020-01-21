@@ -4,6 +4,11 @@
         display: flex;
         flex-wrap: wrap;
         margin: -6px;
+
+        @media (--XS) {
+            flex-direction: column;
+            ;
+        }
     }
 
     &__item {
@@ -12,6 +17,22 @@
         margin: 6px;
         position: relative;
         cursor: pointer;
+
+        @media (--S) {
+            height: auto;
+        }
+
+        @media (--XS) {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        &:last-child {
+            @media (--XS) {
+                margin-bottom: 0;
+            }
+        }
 
         &.not-active {
             display: none;
@@ -25,10 +46,18 @@
 
         &:first-child {
             width: calc(100% / 2 - 12px);
+
+            @media (--XS) {
+                width: 100%;
+            }
         }
 
         &:last-child {
             width: calc(100% / 2 - 12px);
+
+            @media (--XS) {
+                width: 100%;
+            }
         }
     }
 

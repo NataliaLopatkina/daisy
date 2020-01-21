@@ -1,9 +1,11 @@
 .step {
 
     @media (--M) {
-        width: calc(100% / 4);
-        padding: 0;
-        margin: 0;
+        width: calc(100% / 4 - 20px);
+    }
+
+    @media (--S) {
+        width: calc(100% / 2 - 20px);
     }
 
     &--first {

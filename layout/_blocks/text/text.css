@@ -4,9 +4,25 @@
     letter-spacing: -0.1px;
     color: var(--text-color);
 
+    @media (--L) {
+        font-size: 18px;
+    }
+
+    @media (--S) {
+        font-size: 16px;
+    }
+
     &--size-s {
         font-size: 15px;
         line-height: calc(18 / 15);
+
+        @media (--L) {
+            font-size: 15px;
+        }
+
+        @media (--S) {
+            font-size: 15px;
+        }
     }
 
     &--letter-spacing {

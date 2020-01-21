@@ -8,6 +8,10 @@
 
     &__title {
         margin-bottom: 84px;
+
+        @media (--S) {
+            margin-bottom: 36px;
+        }
     }
 
     &__list {
@@ -18,12 +22,33 @@
         padding-right: 16px;
         margin: -10px;
         margin-bottom: 61px;
+
+        @media (--S) {
+            margin: -5px;
+            margin-bottom: 30px;
+        }
+
+        @media (--XS) {
+            flex-direction: column;
+        }
     }
 
     &__item {
-        width: calc(100% / 3 - 20px);
         flex-shrink: 0;
         margin: 10px;
+
+        @media (--S) {
+            margin: 5px;
+        }
+
+        @media (--XS) {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__button-slider {

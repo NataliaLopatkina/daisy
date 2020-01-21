@@ -16,7 +16,11 @@
     &__text {
         max-width: 507px;
         margin: 0 auto;
-        margin-bottom: 78px;   
+        margin-bottom: 78px;
+        
+        @media (--S) {
+            margin-bottom: 30px;
+        }
     }
 
     &__list {
@@ -28,6 +32,10 @@
         @media (--M) {
             margin: -10px;
             margin-bottom: 15px;
+        }
+
+        @media (--S) {
+            flex-wrap: wrap;
         }
     }
 

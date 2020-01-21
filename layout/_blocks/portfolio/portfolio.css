@@ -6,6 +6,14 @@
     padding-bottom: 14px;
     text-align: center;
 
+    @media (--M) {
+        padding-top: 50px;
+    }
+
+    @media (--XS) {
+        padding-top: 30px;
+    }
+
     &__box  {
         overflow: hidden;
     }
@@ -16,6 +24,10 @@
 
     &__list {
         margin-bottom: 54px;
+
+        @media (--S) {
+            margin-bottom: 36px;
+        }
     }
 
     &__button {

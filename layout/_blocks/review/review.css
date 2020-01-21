@@ -14,6 +14,15 @@
         padding-left: 15px;
     }
 
+    @media (--S) {
+        width: 540px;
+        flex-direction: column;
+    }
+
+    @media (--S) {
+        width: 290px;
+    }
+
     &__text {
         line-height: calc(21 / 15);
         text-align: justify;
@@ -23,16 +32,34 @@
         @media (--M) {
             max-width: 237px;
         }
+
+        @media (--S) {
+            max-width: 100%;
+            padding-top: 0;
+            order: 1;
+        }
     }
 
     &__image-box {
         width: 160px;
         margin-left: 70px;
         margin-right: 70px;
+
+        @media (--S) {
+            order: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
     }
 
     &__author {
         padding-top: 57px;
+
+        @media (--S) {
+            padding-top: 0;
+            text-align: center;
+        }
     }
 
     &__name {
@@ -41,6 +68,11 @@
         letter-spacing: -0.14px;
         color: var(--main-color);
         margin-bottom: 7px;
+
+        @media (--S) {
+            font-size: 24px;
+            order: 2;
+        }
     }
 
     &__name--mark {
@@ -52,5 +84,10 @@
         font-weight: 300;
         line-height: calc(41 / 20);
         color: #818181;
+
+        @media (--S) {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
     }
 }

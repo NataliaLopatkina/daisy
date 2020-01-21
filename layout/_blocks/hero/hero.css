@@ -7,15 +7,26 @@
     padding-top: 303px;
     padding-bottom: 296px;
     box-sizing: border-box;
-    margin-top: -108px;
+    margin-top: -77px;
     position: relative;
 
     @media (--XL) {
-        margin-top: -126px;
+        margin-top: -77px;
     }
 
     @media (--L) {
+        margin-top: -147px;
         background-size: cover;
+    }
+
+    @media (--M) {
+        margin-top: -77px;
+    }
+
+    @media (--S) {
+        padding-top: 300px;
+        padding-bottom: 115px;
+        margin-top: -267px;
     }
 
     @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
@@ -29,7 +40,18 @@
         }
 
         @media (--L) {
+            margin-top: -147px;
             background-size: cover;
+        }
+
+        @media (--M) {
+            margin-top: -77px;
+        }
+
+        @media (--S) {
+            padding-top: 300px;
+            padding-bottom: 115px;
+            margin-top: -267px;
         }
     }
 
@@ -43,6 +65,18 @@
         margin-right: auto;
         position: relative;
         margin-bottom: 13px;
+
+        @media (--L) {
+            font-size: 45px;
+        }
+
+        @media (--S) {
+            font-size: 38px;
+        }
+
+        @media (--XS) {
+            font-size: 34px;
+        }
 
         &:before,
         &:after {
@@ -80,6 +114,14 @@
         letter-spacing: -0.12px;
         color: var(--white);
         margin-bottom: 44px;
+
+        @media (--L) {
+            font-size: 20px;
+        }
+
+        @media (--S) {
+            font-size: 18px;
+        }
     }
 
     &__actions {
@@ -95,6 +137,10 @@
         position: absolute;
         top: 12px;
         right: -127px;
+
+        @media (--XS) {
+            display: none;
+        }
     }
 
     &__button-slider {
@@ -127,7 +173,22 @@
             background-size: 100% auto;
 
             @media (--XL) {
-                padding-top: 181px;
+                padding-top: 118px;
+                margin-top: 0;
+            }
+
+            @media (--L) {
+                padding-top: 118px;
+                margin-top: 0;
+            }
+
+            @media (--M) {
+                padding-top: 118px;
+                margin-top: 0;
+            }
+
+            @media (--S) {
+                padding-top: 115px;
                 margin-top: 0;
             }
         }

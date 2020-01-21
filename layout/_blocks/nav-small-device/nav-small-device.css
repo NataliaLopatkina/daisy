@@ -12,4 +12,37 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    &__menu {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        transition-property: opacity, visible, height;
+        transition-duration: 0.25s;
+        transition-timing-function: ease;
+
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__list {
+        padding-top: 20px;
+        list-style: none;
+    }
+
+    &__item {
+        padding: 10px;
+    }
+
+    &__link {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--white);
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
 }

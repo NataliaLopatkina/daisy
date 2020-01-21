@@ -438,7 +438,7 @@ button[disabled] {
     font-weight: 300;
     line-height: calc(26 / 20);
     color: #f2f2f2;
-    display: inline-block;
+    display: block;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background: #fc635e;
@@ -596,12 +596,12 @@ button[disabled] {
     line-height: calc(26 / 20);
     letter-spacing: -0.1px;
     color: #adadad;
-    color: var(--text-color);
+    color: var(--text-color)
 }
 
 .text--size-s {
         font-size: 15px;
-        line-height: calc(18 / 15);
+        line-height: calc(18 / 15)
     }
 
 .text--letter-spacing {
@@ -772,9 +772,67 @@ button[disabled] {
         }
 
 .button-menu {
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background: none
 }
+
+.button-menu:focus {
+        outline: none;
+    }
+
+.button-menu--closed .button-menu__line {
+            -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg)
+        }
+
+.button-menu--closed .button-menu__line:before {
+                -webkit-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                        transform: rotate(90deg);
+                top: 0;
+            }
+
+.button-menu--closed .button-menu__line:after {
+                display: none;
+            }
+
+.button-menu__line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fc635e;
+        background: var(--main-color);
+        position: relative;
+        -webkit-transition: -webkit-transform 0.25s ease;
+        transition: -webkit-transform 0.25s ease;
+        -o-transition: transform 0.25s ease;
+        transition: transform 0.25s ease;
+        transition: transform 0.25s ease, -webkit-transform 0.25s ease
+    }
+
+.button-menu__line:before,
+        .button-menu__line:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #fc635e;
+            background: var(--main-color);
+            position: absolute;
+            left: 0;
+        }
+
+.button-menu__line:before {
+            top: -9px;
+        }
+
+.button-menu__line:after {
+            bottom: -9px;
+        }
 
 .nav-small-device {
     display: none
@@ -790,6 +848,46 @@ button[disabled] {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+    }
+
+.nav-small-device__menu {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        -webkit-transition-property: opacity, visible, height;
+        -o-transition-property: opacity, visible, height;
+        transition-property: opacity, visible, height;
+        -webkit-transition-duration: 0.25s;
+             -o-transition-duration: 0.25s;
+                transition-duration: 0.25s;
+        -webkit-transition-timing-function: ease;
+             -o-transition-timing-function: ease;
+                transition-timing-function: ease
+    }
+
+.nav-small-device__menu.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+.nav-small-device__list {
+        padding-top: 20px;
+        list-style: none;
+    }
+
+.nav-small-device__item {
+        padding: 10px;
+    }
+
+.nav-small-device__link {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        color: var(--white);
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
     }
 
 .header {
@@ -808,7 +906,7 @@ button[disabled] {
     padding-bottom: 296px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-top: -108px;
+    margin-top: -77px;
     position: relative
 }
 
@@ -857,7 +955,7 @@ button[disabled] {
         letter-spacing: -0.12px;
         color: white;
         color: var(--white);
-        margin-bottom: 44px;
+        margin-bottom: 44px
     }
 
 .hero__actions {
@@ -872,7 +970,7 @@ button[disabled] {
 .hero__mouse {
         position: absolute;
         top: 12px;
-        right: -127px;
+        right: -127px
     }
 
 .hero__button-slider {
@@ -909,7 +1007,7 @@ button[disabled] {
         }
 
 .advantage {
-    max-width: calc(100% / 4);
+    max-width: calc(100% / 4)
 }
 
 .advantage__image-block {
@@ -1017,7 +1115,7 @@ button[disabled] {
 .advantages__text {
         max-width: 507px;
         margin: 0 auto;
-        margin-bottom: 78px;   
+        margin-bottom: 78px
     }
 
 .advantages__list {
@@ -1233,23 +1331,23 @@ button[disabled] {
 
 .area {
     padding-bottom: 17px;
-    background: #f2f2f2;
+    background: #f2f2f2
 }
 
-.area__box {
+.area .area__box {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
-                justify-content: space-between;
+                justify-content: space-between
     }
 
 .area__text-box {
         text-align: left;
         max-width: 396px;
         -ms-flex-negative: 0;
-            flex-shrink: 0;
+            flex-shrink: 0
     }
 
 .area__title {
@@ -1292,7 +1390,7 @@ button[disabled] {
             -webkit-box-orient: horizontal;
             -webkit-box-direction: reverse;
                 -ms-flex-direction: row-reverse;
-                    flex-direction: row-reverse;
+                    flex-direction: row-reverse
         }
 
 .area--landing {
@@ -1304,7 +1402,7 @@ button[disabled] {
         }
 
 .area--landing .area__text-box {
-            padding-top: 36px;
+            padding-top: 36px
         }
 
 .area--advertising {
@@ -1349,7 +1447,7 @@ button[disabled] {
         }
 
 .area--marketing .area__image-box {
-            padding-left: 25px;
+            padding-left: 25px
         }
 
 .areas {
@@ -1374,7 +1472,7 @@ button[disabled] {
         padding-bottom: 15px;
         border-top: 1px solid #adadad;
         border-bottom: 1px solid #adadad;
-        margin-bottom: 46px;
+        margin-bottom: 46px
     }
 
 .portfolio-toggles__item {
@@ -1392,7 +1490,7 @@ button[disabled] {
         }
 
 .portfolio-toggles__item:last-child {
-            margin-right: 0
+            margin: 0
         }
 
 .portfolio-toggles__item:last-child:after {
@@ -1426,7 +1524,7 @@ button[disabled] {
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        margin: -6px;
+        margin: -6px
     }
 
 .portfolio-list__item {
@@ -1446,11 +1544,11 @@ button[disabled] {
             }
 
 .portfolio-list__item:first-child {
-            width: calc(100% / 2 - 12px);
+            width: calc(100% / 2 - 12px)
         }
 
 .portfolio-list__item:last-child {
-            width: calc(100% / 2 - 12px);
+            width: calc(100% / 2 - 12px)
         }
 
 .portfolio-list__image {
@@ -1502,7 +1600,7 @@ button[disabled] {
 .portfolio {
     padding-top: 78px;
     padding-bottom: 14px;
-    text-align: center;
+    text-align: center
 }
 
 .portfolio__box  {
@@ -1514,7 +1612,7 @@ button[disabled] {
     }
 
 .portfolio__list {
-        margin-bottom: 54px;
+        margin-bottom: 54px
     }
 
 .portfolio__button {
@@ -1534,7 +1632,7 @@ button[disabled] {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin: -9px;
+        margin: -9px
     }
 
 .social-links__item {
@@ -1555,6 +1653,10 @@ button[disabled] {
         transition: color 0.25s ease;
     }
 
+.team-item {
+    width: calc(100% / 3 - 20px)
+}
+
 .team-item__image-box {
         max-width: 147px;
         margin-left: auto;
@@ -1568,7 +1670,7 @@ button[disabled] {
         letter-spacing: -0.14px;
         color: #fc635e;
         color: var(--main-color);
-        margin-bottom: 4px;
+        margin-bottom: 4px
     }
 
 .team-item__name--mark {
@@ -1579,7 +1681,7 @@ button[disabled] {
         font-size: 20px;
         line-height: calc(34 / 20);
         letter-spacing: -0.1px;
-        margin-bottom: 7px;
+        margin-bottom: 7px
     }
 
 .team {
@@ -1590,7 +1692,7 @@ button[disabled] {
 }
 
 .team__title {
-        margin-bottom: 84px;
+        margin-bottom: 84px
     }
 
 .team__list {
@@ -1604,15 +1706,18 @@ button[disabled] {
         padding-left: 16px;
         padding-right: 16px;
         margin: -10px;
-        margin-bottom: 61px;
+        margin-bottom: 61px
     }
 
 .team__item {
-        width: calc(100% / 3 - 20px);
         -ms-flex-negative: 0;
             flex-shrink: 0;
-        margin: 10px;
+        margin: 10px
     }
+
+.team__item:last-child {
+            margin-bottom: 0;
+        }
 
 .team__button-slider {
         margin-left: auto;
@@ -1638,11 +1743,11 @@ button[disabled] {
 .review__image-box {
         width: 160px;
         margin-left: 70px;
-        margin-right: 70px;
+        margin-right: 70px
     }
 
 .review__author {
-        padding-top: 57px;
+        padding-top: 57px
     }
 
 .review__name {
@@ -1651,7 +1756,7 @@ button[disabled] {
         letter-spacing: -0.14px;
         color: #fc635e;
         color: var(--main-color);
-        margin-bottom: 7px;
+        margin-bottom: 7px
     }
 
 .review__name--mark {
@@ -1662,7 +1767,7 @@ button[disabled] {
         font-size: 20px;
         font-weight: 300;
         line-height: calc(41 / 20);
-        color: #818181;
+        color: #818181
     }
 
 .controls__list {
@@ -1952,7 +2057,7 @@ button[disabled] {
 }
 
 .hero {
-        margin-top: -126px
+        margin-top: -77px
 }
 
     .hero--expand {
@@ -1968,9 +2073,30 @@ button[disabled] {
             width: 992px
 }
 
+.title {
+        font-size: 24px
+}
+
+.text {
+        font-size: 18px
+}
+
+    .text--size-s {
+            font-size: 15px
+    }
+
 .hero {
+        margin-top: -147px;
         background-size: cover
 }
+
+    .hero__title {
+            font-size: 45px
+    }
+
+    .hero__subtitle {
+            font-size: 20px
+    }
 
     .step--first {
             padding-left: 11px;
@@ -1985,6 +2111,14 @@ button[disabled] {
         .steps__box:after {
                 left: 150px
         }
+
+    .team-item__name {
+            font-size: 24px
+    }
+
+    .team-item__profession {
+            font-size: 18px
+    }
 
 .review {
         width: 992px;
@@ -2006,6 +2140,10 @@ button[disabled] {
             width: 768px
 }
 
+.hero {
+        margin-top: -77px
+}
+
         .hero__title:before,
         .hero__title:after {
                 display: none
@@ -2021,9 +2159,7 @@ button[disabled] {
     }
 
 .step {
-        width: calc(100% / 4);
-        padding: 0;
-        margin: 0
+        width: calc(100% / 4 - 20px)
 }
 
     .step--first {
@@ -2071,7 +2207,13 @@ button[disabled] {
         }
 
     .steps__list {
-            padding-left: 0
+            padding-left: 0;
+            margin: -10px
+    }
+
+    .steps__item {
+            padding: 0;
+            margin: 10px
     }
 
     .portfolio-toggles__item {
@@ -2081,6 +2223,10 @@ button[disabled] {
         .portfolio-toggles__item:after {
                 right: -45px
         }
+
+.portfolio {
+        padding-top: 50px
+}
 
 .review {
         width: 768px;
@@ -2097,10 +2243,20 @@ button[disabled] {
 }
 
 .box {
-            width: 540px;
-            padding-left: 30px;
-            padding-right: 30px
+            width: 540px
 }
+
+.title {
+        font-size: 20px
+}
+
+.text {
+        font-size: 16px
+}
+
+    .text--size-s {
+            font-size: 15px
+    }
 
 .nav {
         display: none
@@ -2108,7 +2264,184 @@ button[disabled] {
 
 .nav-small-device {
         display: block
-}}
+}
+
+.hero {
+        padding-top: 300px;
+        padding-bottom: 115px;
+        margin-top: -267px
+}
+
+    .hero__title {
+            font-size: 38px
+    }
+
+    .hero__subtitle {
+            font-size: 18px
+    }
+
+.advantage {
+        max-width: calc(100% / 2 - 20px)
+}
+
+    .advantages__text {
+            margin-bottom: 30px
+    }
+
+    .advantages__list {
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap
+    }
+
+.step {
+        width: calc(100% / 2 - 20px)
+}
+
+    .steps__list {
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            margin: -5px;
+            margin-bottom: 10px
+    }
+
+.area {
+        padding-top: 30px;
+        padding-bottom: 30px
+}
+
+.area .area__box {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            margin-bottom: 30px
+    }
+
+    .area__text-box {
+            max-width: 100%;
+            margin-bottom: 30px
+    }
+
+    .area__title {
+            font-size: 24px
+    }
+
+        .area--reverse .area__box {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column
+        }
+
+        .area--landing .area__text-box {
+                padding-top: 0
+        }
+
+    .area__button {
+            margin-left: auto;
+            margin-right: auto
+    }
+    .portfolio-toggles__list {
+            margin-bottom: 30px
+    }
+
+    .portfolio-toggles__item {
+            margin-right: 22px
+    }
+
+        .portfolio-toggles__item:after {
+                display: none
+        }
+
+    .portfolio-list__item {
+            height: auto
+    }
+
+    .portfolio__list {
+            margin-bottom: 36px
+    }
+    .social-links__list {
+            margin: -5px
+    }
+
+    .social-links__item {
+            margin: 5px
+    }
+
+.team-item {
+        width: calc(100% / 3 - 10px)
+}
+
+    .team-item__name {
+            font-size: 18px
+    }
+
+    .team-item__profession {
+            font-size: 16px
+    }
+
+    .team__title {
+            margin-bottom: 36px
+    }
+
+    .team__list {
+            margin: -5px;
+            margin-bottom: 30px
+    }
+
+    .team__item {
+            margin: 5px
+    }
+
+.review {
+        width: 540px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column
+}
+
+.review {
+        width: 290px
+}
+
+    .review__text {
+            max-width: 100%;
+            padding-top: 0;
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1
+    }
+
+    .review__image-box {
+            -webkit-box-ordinal-group: 1;
+                -ms-flex-order: 0;
+                    order: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px
+    }
+
+    .review__author {
+            padding-top: 0;
+            text-align: center
+    }
+
+    .review__name {
+            font-size: 24px;
+            -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
+                    order: 2
+    }
+
+    .review__profession {
+            font-size: 16px;
+            margin-bottom: 10px
+    }
+
+    .reviews__logo {
+            margin-bottom: 30px
+    }}
 
 @media  (max-width: 575px) {
 
@@ -2117,6 +2450,77 @@ button[disabled] {
             min-width: 320px;
             max-width: 480px
 }
+
+    .hero__title {
+            font-size: 34px
+    }
+
+    .hero__mouse {
+            display: none
+    }
+
+    .area__title {
+            font-size: 20px
+    }
+
+        .area--marketing .area__image-box {
+                padding-left: 0
+        }
+    .portfolio-toggles__list {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column
+    }
+
+    .portfolio-toggles__item {
+            margin-right: 0;
+            margin-bottom: 5px
+    }
+    .portfolio-list__content {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column
+    }
+
+    .portfolio-list__item {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px
+    }
+
+        .portfolio-list__item:last-child {
+                margin-bottom: 0
+        }
+
+        .portfolio-list__item:first-child {
+                width: 100%
+        }
+
+        .portfolio-list__item:last-child {
+                width: 100%
+        }
+
+.portfolio {
+        padding-top: 30px
+}
+
+.team-item {
+        width: 100%
+}
+
+    .team__list {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column
+    }
+
+    .team__item {
+            margin: 0;
+            margin-bottom: 10px
+    }
         }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
@@ -2156,7 +2560,7 @@ button[disabled] {
 }
 
     .hero--expand {
-                padding-top: 181px;
+                padding-top: 118px;
                 margin-top: 0
     }
         }
@@ -2164,10 +2568,42 @@ button[disabled] {
 @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and   (max-width: 1199px), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2) and   (max-width: 1199px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and   (max-width: 1199px) {
 
 .hero {
+            margin-top: -147px;
             background-size: cover
 }
+
+    .hero--expand {
+                padding-top: 118px;
+                margin-top: 0
+    }
 
 .footer {
             background-size: cover
 }
+        }
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and   (max-width: 991px), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2) and   (max-width: 991px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and   (max-width: 991px) {
+
+.hero {
+            margin-top: -77px
+}
+
+    .hero--expand {
+                padding-top: 118px;
+                margin-top: 0
+    }
+        }
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and   (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2) and   (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and   (max-width: 767px) {
+
+.hero {
+            padding-top: 300px;
+            padding-bottom: 115px;
+            margin-top: -267px
+}
+
+    .hero--expand {
+                padding-top: 115px;
+                margin-top: 0
+    }
         }
