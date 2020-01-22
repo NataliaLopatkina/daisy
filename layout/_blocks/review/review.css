@@ -1,26 +1,20 @@
 .review {
     display: flex;
     flex-shrink: 0;
-    width: 940px;
 
     @media (--L) {
-        width: 992px;
         padding-left: 30px;
+        padding-right: 30px;
         box-sizing: border-box;
     }
 
-    @media (--M) {
-        width: 768px;
-        padding-left: 15px;
-    }
-
     @media (--S) {
-        width: 540px;
         flex-direction: column;
     }
 
-    @media (--S) {
-        width: 290px;
+    @media (--XS) {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     &__text {
@@ -30,7 +24,7 @@
         padding-top: 57px;
 
         @media (--M) {
-            max-width: 237px;
+            max-width: 208px;
         }
 
         @media (--S) {

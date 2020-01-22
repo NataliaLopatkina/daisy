@@ -32,6 +32,11 @@
 
     &__button {
         margin-bottom: 26px;
+
+        @media (--S) {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__button-slider {

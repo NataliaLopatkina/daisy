@@ -82,13 +82,16 @@ class Slider {
         this.sliderList = document.querySelector('.reviews__list');
         this.sliderItem = document.querySelectorAll('.review');
         this.translatePosition = -(100 / (this.sliderItem.length + 2)) + '%';
-        this.translatePositionLast = -this.sliderItem.length * (100 / (this.sliderItem.length + 2)) + '%';                                                 
+        this.translatePositionLast = -this.sliderItem.length * (100 / (this.sliderItem.length + 2)) + '%';
+        this.widthItem = 100 / (this.sliderItem.length + 2) + '%';                                                 
         
         this.dublicateSlides();
         this.init();
     }
 
     init() {
+        this.addWidthItem();
+
         const controlNext = document.querySelector('.controls__button--next');
         const controlPrev = document.querySelector('.controls__button--prev');
 
@@ -109,8 +112,18 @@ class Slider {
         this.sliderList.insertBefore(cloneElementLast, children[0]);
         this.sliderList.appendChild(cloneElementFirst);
 
-        this.calcWidth();
+        cloneElementFirst.style.width = this.widthItem;
+        cloneElementLast.style.width = this.widthItem;
+
+        this.addWidthList();
         this.changePosition(this.translatePosition);
+    }
+
+    addWidthItem() {
+
+        this.sliderItem.forEach((item)=> {
+            item.style.width = this.widthItem;
+        })
     }
 
     addAnimation() {
@@ -121,8 +134,9 @@ class Slider {
         this.sliderList.classList.remove('transition');
     }
 
-    calcWidth() {
-        this.sliderList.style.width = (this.sliderItem.length + 2) * 100 + '%';
+    addWidthList() {
+        const widthList = (this.sliderItem.length + 2) * 100 + '%';
+        this.sliderList.style.width = widthList;
     }
 
     changePosition(translatePosition) {
@@ -148,7 +162,7 @@ class Slider {
         if (this.slideIndex > this.sliderItem.length - 1) {
             setTimeout(()=> {
                 this.removeAnimation();
-                this.calcWidth();
+                this.addWidthList();
                 this.slideIndex = 0;
                 this.changePosition(this.translatePosition);
                 this.animation = false;
@@ -179,7 +193,7 @@ class Slider {
         if (this.slideIndex < 0) {
             setTimeout(() => {
                 this.removeAnimation();
-                this.calcWidth();
+                this.addWidthList();
                 this.slideIndex = this.sliderItem.length - 1;
                 this.changePosition(this.translatePositionLast);
                 this.animation = false;

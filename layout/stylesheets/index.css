@@ -1616,7 +1616,7 @@ button[disabled] {
     }
 
 .portfolio__button {
-        margin-bottom: 26px;
+        margin-bottom: 26px
     }
 
 .portfolio__button-slider {
@@ -1729,8 +1729,7 @@ button[disabled] {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
-    width: 940px
+        flex-shrink: 0
 }
 
 .review__text {
@@ -2121,8 +2120,8 @@ button[disabled] {
     }
 
 .review {
-        width: 992px;
         padding-left: 30px;
+        padding-right: 30px;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box
 }
@@ -2228,13 +2227,8 @@ button[disabled] {
         padding-top: 50px
 }
 
-.review {
-        width: 768px;
-        padding-left: 15px
-}
-
     .review__text {
-            max-width: 237px
+            max-width: 208px
     }}
 
 @media   (max-width: 767px) {
@@ -2360,6 +2354,11 @@ button[disabled] {
     .portfolio__list {
             margin-bottom: 36px
     }
+
+    .portfolio__button {
+            margin-left: auto;
+            margin-right: auto
+    }
     .social-links__list {
             margin: -5px
     }
@@ -2394,15 +2393,10 @@ button[disabled] {
     }
 
 .review {
-        width: 540px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column
-}
-
-.review {
-        width: 290px
 }
 
     .review__text {
@@ -2485,8 +2479,11 @@ button[disabled] {
     }
 
     .portfolio-list__item {
+            max-width: 320px;
             width: 100%;
-            margin: 0;
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 10px
     }
 
@@ -2521,6 +2518,11 @@ button[disabled] {
             margin: 0;
             margin-bottom: 10px
     }
+
+.review {
+        padding-left: 15px;
+        padding-right: 15px
+}
         }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
